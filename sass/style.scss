@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_mixins.scss";
+@import "_core.scss";
+
+
+@import "blocks/_top-menu.scss";
+@import "blocks/_logo.scss";
+@import "blocks/_menu.scss";
+@import "blocks/_hamburger.scss";
+@import "blocks/_phone.scss";
+@import "blocks/_content.scss";
+@import "blocks/_news-block.scss";
+@import "blocks/_social.scss";
+@import "blocks/_text-block.scss";
+@import "blocks/_shablon.scss";
+@import "blocks/_sidebar.scss";
+@import "blocks/_social-icons.scss";
+@import "blocks/_social-comments.scss";
+@import "blocks/_menu-list.scss";
+@import "blocks/_address.scss";
+@import "blocks/_footer.scss";

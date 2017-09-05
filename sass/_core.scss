@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+$topmenu: #252026;
+$white: #fff;
+$orange: #f5b04f;
+$orangehovertext: #e7931c;
+$gray: #949195;
+$lightgray: #f9f8f9;
+$black: #252026;
+$borderbottom: #e9eff0;
+$blue: #1e83a9;
+$buttonblue: #6ebad7;
+$orangehover: #f49a1a;
+$light: #fcfcfc;
+$logo-gray: #969397;
+$hamburger: #585359;
+$bordermenu: #3b373c;
+
+/**
+ * Основные стили
+ **/
+
+body {
+	font-family: open_sanslight, Arial, sans-serif;
+	font-size: 15px;
+	//-webkit-font-smoothing: antialiased;
+    //-moz-osx-font-smoothing: grayscale;
+    min-height: 100%;
+    height: auto;
+}
+
+.container {
+	@include min-max(320px, 100%, 0);
+}
+

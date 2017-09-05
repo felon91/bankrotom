@@ -1,0 +1,40 @@
+@mixin clearfix() {
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin min-max($min-width, $max-width, $padding) {
+	min-width: $min-width;
+	max-width: $max-width;
+	padding: 0 $padding;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+@mixin wrap($w) {
+	width: $w;
+	margin: 0 auto;
+}
+
+@mixin title() {
+	color: $black;
+	font-size: 30px;
+	border-bottom: 1px solid $borderbottom;
+	padding: 24px 60px 25px 30px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
+	background: url('../img/arrow-title.png') 96.35% center no-repeat;
+}
+
+@mixin white-block() {
+	box-shadow: 0 1px 4px rgba(0,0,0,.09);
+	background-color: $white;
+	border-radius: 4px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}

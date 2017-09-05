@@ -1,0 +1,41 @@
+.phone {
+	background: url('../img/icon4.png') left center no-repeat;
+	padding: 5px 0 5px 50px;
+
+	a {
+		font-size: 20px;
+		color: $orange;
+		text-decoration: none;
+		font-family: open_sanssemibold;
+		margin-bottom: 5px;
+		display: block;
+	}
+
+	p {
+		font-size: 12px;
+		color: $gray;
+	}
+
+}
+
+.phone-white {
+	display: none;
+	@include white-block();
+}
+
+
+@media (max-width: 480px) {
+	
+	.phone-white {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 12px 0 15px;
+
+		.phone {
+			align-self: center;
+		}
+			
+	}
+
+}

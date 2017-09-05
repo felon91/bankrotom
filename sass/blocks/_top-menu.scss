@@ -1,0 +1,57 @@
+.top-menu {
+	background-color: $topmenu;
+	padding: 10px 0 12px;
+
+	.top-menu__wrap {
+		@include min-max(320px, 1200px, 30px);
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		> div {
+			align-self: center;
+		}
+
+	}
+
+	.top-menu__right {
+		display: flex;
+	}
+
+}
+
+@media (max-width: 980px) {
+	
+	.top-menu {
+
+		.top-menu__wrap {
+			padding: 0 20px;
+		}
+
+	}
+
+}
+
+@media (max-width: 640px) {
+	
+	.top-menu {
+
+		.top-menu__wrap {
+			padding: 0 10px;
+		}
+
+	}
+
+}
+
+@media (max-width: 480px) {
+	
+	.top-menu {
+
+		.phone {
+			display: none;
+		}
+
+	}
+
+}

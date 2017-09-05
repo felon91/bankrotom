@@ -1,0 +1,58 @@
+.footer {
+	background-color: $topmenu;
+	padding: 45px 0 45px;
+
+	.footer__wrap {
+		@include min-max(320px, 1200px, 30px);
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.footer__contacts {
+		align-self: center;
+		margin: auto 0;
+	}
+
+}
+
+@media (max-width: 880px) {
+	
+	.footer {
+
+		.footer__wrap {
+			position: relative;
+		}
+
+		.footer__contacts {
+			position: absolute;
+			left: 20px;
+			top: 110px;
+		}
+
+	}
+
+}
+
+
+@media (max-width: 520px) {
+	
+	.footer {
+		padding: 25px 0 10px;
+
+		.footer__wrap {
+			flex-direction: column;
+			padding: 0 15px;
+		}
+
+		.footer__contacts {
+			position: static;
+			left: auto;
+			top: auto;
+			margin: 10px 0 0 0;
+			align-self: flex-start;
+		}
+
+	}
+
+}

@@ -1,0 +1,70 @@
+.menu-list {
+	display: flex;
+	justify-content: space-between;
+	width: 56.15%;
+
+	ul {
+		width: 50%;
+
+		li {
+			margin: 10px 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: $white;
+			font-size: 14px;
+			line-height: 17px;
+
+			&:hover {
+				color: $orangehovertext;
+			}
+
+		}
+
+		&:last-child {
+			width: 40%;
+		}
+
+	}
+
+}
+
+@media (max-width: 880px) {
+	
+	.menu-list {
+		flex-wrap: wrap;
+		width: 50%;
+
+		ul {
+			width: 100%;
+
+			&:last-child {
+				width: 100%;
+			}
+
+			li {
+
+				&:first-child {
+					margin-top: 0;
+				}
+
+			}
+
+		}
+
+		br {
+			display: none;
+		}
+
+	}
+
+}
+
+@media (max-width: 520px) {
+	
+	.menu-list {
+		width: 100%;
+	}
+
+}

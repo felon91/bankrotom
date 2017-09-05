@@ -1,0 +1,23 @@
+.hamburger {
+	display: none;
+	align-self: center;
+	margin: auto 0 auto 25px;
+
+	a {
+		width: 40px;
+		background: $hamburger;
+		text-align: center;
+		border-radius: 50%;
+		padding: 12.5px 0;
+		display: block;
+	}
+
+}
+
+@media (max-width: 980px) {
+	
+	.hamburger {
+		display: block;
+	}
+
+}

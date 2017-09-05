@@ -1,0 +1,123 @@
+.sidebar {
+	@include white-block();
+	padding-bottom: 20px;
+	
+	.sidebar__element {
+
+		a {
+			position: relative;
+			padding: 22px 23px 22px 80px;
+			box-sizing: border-box;
+			display: block;
+			color: $blue;
+			text-decoration: none;
+			font-size: 15px;
+			line-height: 18px;
+			border-bottom: 1px solid $borderbottom;
+
+			&:hover {
+				background-color: $light;
+				color: $orangehovertext;
+
+				&:after {
+					background-color: $orangehover;
+				}
+
+				&:before {
+					background-position: 0 0;
+				}
+
+			}
+
+		}
+
+	}
+
+	.sidebar__element-news {
+
+		a {
+
+			&:after {
+				display: block;
+				content: "";
+				width: 40px;
+				height: 40px;
+				background-color: $lightgray;
+				position: absolute;
+				border-radius: 50%;
+				left: 23px;
+				top: 50%;
+				margin-top: -20px;
+			}
+
+			&:before {
+				background: url('../img/icon5-sprite.png') -19px 0 no-repeat;
+				content: "";
+				position: absolute;
+				width: 19px;
+				height: 14px;
+				display: block;
+				left: 34px;
+				top: 50%;
+				margin-top: -7px;
+				z-index: 10;
+			}
+
+		}
+
+	}
+
+	.sidebar__element-form {
+
+		a {
+
+			&:after {
+				display: block;
+				content: "";
+				width: 40px;
+				height: 40px;
+				background-color: $lightgray;
+				position: absolute;
+				border-radius: 50%;
+				left: 23px;
+				top: 50%;
+				margin-top: -20px;
+			}
+
+			&:before {
+				background: url('../img/icon6-sprite.png') -14px 0 no-repeat;
+				content: "";
+				position: absolute;
+				width: 14px;
+				height: 19px;
+				display: block;
+				left: 36px;
+				top: 50%;
+				margin-top: -9.5px;
+				z-index: 10;
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width: 980px) {
+	
+	.sidebar {
+		padding-bottom: 0;
+
+		.sidebar__element {
+		
+			a {
+				border-bottom: none;
+				border-right: 1px solid $borderbottom;
+				padding: 35px 23px 35px 80px
+			}
+
+		}
+
+	}
+
+}

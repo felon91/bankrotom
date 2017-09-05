@@ -1,0 +1,85 @@
+.logo {
+	overflow: hidden;
+
+	img {
+		float: left;
+		margin-top: 4px;
+	}
+
+	span {
+		color: $white;
+		font-family: ubuntumedium;
+		font-size: 18px;
+		line-height: 19px;
+		margin-left: 48px;
+		display: block;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+}
+
+.logo-gray {
+	margin: auto 0;
+	align-self: center;
+	
+	span {
+		color: $logo-gray;
+		font-size: 15px;
+		line-height: 17px;
+		margin-left: 40px;
+
+		&:last-child {
+			margin-top: 15px;
+			font-size: 12px;
+			font-family: open_sanslight;
+		}
+
+	}
+
+}
+
+@media (max-width: 880px) {
+	
+	.logo-gray {
+		align-self: flex-start;
+		margin: 10px 0 0 0;
+	}
+
+}
+
+@media (max-width: 520px) {
+	
+	.logo-gray {
+	margin: 0 0 20px 0;
+	}
+
+}
+
+@media (max-width: 480px) {
+
+	.logo {
+
+		img {
+			width: 20px;
+			margin: 0;
+		}
+
+		span {
+			font-size: 15px;
+			margin-left: 35px;
+
+			br {
+
+				&:first-child {
+					display: none;
+				}
+
+			}
+		}
+
+	}
+
+}

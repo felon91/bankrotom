@@ -1,0 +1,200 @@
+.menu {
+	width: 56.14%;
+
+	ul {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	li {
+		padding: 5px 0 5px 50px;
+		position: relative;
+
+		a {
+
+			&:after {
+				display: block;
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 50%;
+				margin-top: -20px;
+				width: 40px;
+				height: 40px;
+				background: url('../img/icon2.png') center #585359 no-repeat;
+				border-radius: 50%;
+			}
+
+			&:hover {
+				color: $orangehovertext;
+				
+				&:after {
+					background-color: $orangehover;
+				}
+
+			}
+
+		}
+
+		
+
+
+		&:first-child {
+
+			a {
+
+				&:after {
+					background: url('../img/icon.png') center #585359 no-repeat;
+				}
+
+				&:hover {
+
+					&:after {
+						background-color: $orangehover;
+					}
+
+				}
+
+			}
+
+		}
+
+		&:last-child {
+
+			a {
+
+				&:after {
+					background: url('../img/icon3.png') center #585359 no-repeat;
+				}
+
+				&:hover {
+
+					&:after {
+						background-color: $orangehover;
+					}
+
+				}
+
+			}
+			
+		}
+
+	}
+
+	a {
+		color: $white;
+		text-decoration: none;
+		font-size: 15px;
+		line-height: 18px;
+	}
+
+	.menu__children {
+		padding-right: 35px;
+		background: url('../img/arrow-bottom.png') right center no-repeat;
+	}
+
+}
+
+@media (max-width: 980px) {
+	
+	.menu {
+		width: 330px;
+		position: absolute;
+		z-index: 20;
+		right: 10px;
+		top: 89px;
+		background-color: $topmenu;
+		border-radius: 5px;
+		display: none;
+
+		ul {
+			flex-direction: column;
+
+			&:after {
+				display: block;
+				content: "";
+				border: 10px solid transparent;
+    			border-bottom: 10px solid $topmenu;
+    			top: -16px;
+    			position: absolute;
+    			right: 20px;
+			}
+
+		}
+
+		li {
+			padding: 0 0 0 85px;
+			border-bottom: 1px solid $bordermenu;
+			display: flex;
+			height: 73px;
+
+			a {
+				align-self: center;
+
+				&:after {
+					left: 30px;
+				}
+
+				br {
+					display: none;
+				}
+
+			}
+
+			&:last-child {
+				border: none;
+			}
+
+		}
+
+		.menu__children {
+			padding-right: 35px;
+			background: url('../img/arrow-bottom.png') 285px center no-repeat;
+		}
+
+	}
+
+}
+
+@media (max-width: 640px) {
+	
+	.menu {
+
+		ul {
+
+			&:after {
+				right: 10px;
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width: 480px) {
+	
+	.menu {
+		width: 300px;
+		top: 73px;
+		
+		li {
+			padding: 0 0 0 65px;
+
+			a {
+
+				&:after {
+					left: 15px;
+				}
+
+			}
+
+		}
+
+		.menu__children {
+			background: url('../img/arrow-bottom.png') 265px center no-repeat;
+		}
+
+	}
+
+}

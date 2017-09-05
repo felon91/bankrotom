@@ -1,0 +1,62 @@
+.shablon {
+	@include white-block();
+
+	.shablon__title {
+		@include title();
+	}
+
+	.shablon__button {
+		background:  url('../img/download.png') 20px center no-repeat $buttonblue;
+		display: block;
+		border-radius: 5px;
+		color: $white;
+		text-align: center;
+		font-size: 15px;
+		font-family: open_sansbold;
+		width: 337px;
+		text-decoration: none;
+		padding: 15.5px 0 15.5px 20px;
+		box-sizing: border-box;
+		margin: 30px auto;
+		outline: none;
+	}
+
+	img {
+		display: block;
+		margin: 30px auto 0;
+	}
+
+}
+
+@media (max-width: 520px) {
+	
+	.shablon {
+
+		.shablon__title {
+			font-size: 20px;
+			padding-left: 20px;
+		}
+
+		img {
+			width: 100%;
+			padding: 0 20px;
+			box-sizing: border-box;
+		}
+
+	}
+
+}
+
+@media (max-width: 480px) {
+	
+	.shablon {
+
+		.shablon__button {
+			width: 265px;
+			padding-left: 55px;
+			text-align: left;
+		}
+
+	}
+
+}
